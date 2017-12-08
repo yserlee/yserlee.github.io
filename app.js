@@ -44,8 +44,11 @@ class Tech extends React.Component {
             <div className="area tech">
                 <div id="tech" className="title">Tech</div>
                 <div className="content">JavaScript</div>
+                <div className="content">React</div>
+                <div className="content">Redux</div>
                 <div className="content">HTML</div>
                 <div className="content">CSS</div>
+                <div className="content">Atom</div>
                 <div className="content">jQuery</div>
                 <div className="content">Java</div>
                 <div className="content">JSP, Servlet</div>
