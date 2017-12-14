@@ -16,7 +16,8 @@ class Navbar extends React.Component {
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul className="nav navbar-nav navbar-right">
                         <li><a href="#about">About</a></li>
-                        <li><a href="#tech">Tech</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#career">Career</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                     </div>
@@ -33,16 +34,17 @@ class About extends React.Component {
                 <div id="about" className="title">About</div>
                 <div className="content name">Lee Yunseok</div>
                 <div className="content">Web Developer</div>
+                <div className="content">UI Developer</div>
             </div>
         );
     }
 }
 
-class Tech extends React.Component {
+class Technology extends React.Component {
     render() {
         return (
-            <div className="area tech">
-                <div id="tech" className="title">Tech</div>
+            <div className="area technology">
+                <div id="technology" className="title">Tech</div>
                 <div className="content">JavaScript</div>
                 <div className="content">React</div>
                 <div className="content">Redux</div>
@@ -53,6 +55,25 @@ class Tech extends React.Component {
                 <div className="content">Java</div>
                 <div className="content">JSP, Servlet</div>
                 <div className="content">Eclipse plug-in & RCP</div>
+            </div>
+        );
+    }
+}
+
+class Career extends React.Component {
+    render() {
+        return (
+            <div className="area">
+                <div id="career" className="title">Career</div>
+                <div className="content">2017-03~ Implement editor based on Atom for IoT</div>
+                <div className="content">2016-11~2017-02 Implement web application for management conference</div>
+                <div className="content">2016-08~2016-10 Plan VR application and implement VR application prototype</div>
+                <div className="content">2015-09~2016-07 Implement web front end module of JavaScript static analysis solution</div>
+                <div className="content">2014-02~2015-08 Implement web-based UI prototyping / builder tool for app / service planner / developer</div>
+                <div className="content">2012-02~2014-01 Implement web UI builder based on Eclipse plug-in for web application</div>
+                <div className="content">2010-08~2012-01 Implement dynamic analyzer based on Eclipse RCP and Eclipse plug-in</div>
+                <div className="content">2009-08~2010-07 Implement OS application</div>
+                <div className="content">2008-08~2009-07 Implement web front end module of solution for business intelligence</div>
             </div>
         );
     }
@@ -94,7 +115,8 @@ const element = (
     <div>
         <Navbar></Navbar>
         <About></About>
-        <Tech></Tech>
+        <Technology></Technology>
+        <Career></Career>
         <Contact></Contact>
     </div>
 );
